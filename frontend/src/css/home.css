@@ -12,6 +12,7 @@ main {
   height: -webkit-fill-available;
   max-height: 100vh;
   overflow-x: auto;
+  overflow-y: auto;
 }
 
 .dropdown-toggle { outline: 0; }
@@ -60,6 +61,11 @@ main {
 .scrollarea {
   overflow-y: auto;
 }
+
+.b-example-divider {
+  margin-left: 218px;
+}
+
 .link-body-emphasis, .nav-link {
   font-weight: 400;
   font-size: 14px;
@@ -109,7 +115,8 @@ main {
 }
 
 .content {
-  padding: 100px 60px;
+  padding: 100px 0 0 60px;
+  margin-left: 219px;
 }
 
 .title {
