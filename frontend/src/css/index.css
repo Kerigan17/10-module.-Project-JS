@@ -105,6 +105,10 @@ main {
   padding: 12px 16px;
 }
 
+.logo {
+  width: 98px;
+}
+
 .content {
   padding: 100px 60px;
 }
