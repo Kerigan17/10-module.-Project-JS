@@ -267,8 +267,64 @@ td {
   fill: rgba(0, 0, 0, 0.5);
 }
 
-.basket {
+.popup {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.45);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
 
+.popup-content {
+  background-color: white;
+  width: 530px;
+  height: 184px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid #CED4DA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.popup-text {
+  width: 450px;
+  color: #290661;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.popup-buttons button {
+  padding: 12px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  width: 111px;
+  height: 38px;
+  line-height: 1;
+  border: none;
+}
+
+.popup-buttons button:nth-child(1) {
+  background-color: #198754;
+}
+
+.popup-buttons button:nth-child(2) {
+  background-color: #DC3545;
 }
 
 
