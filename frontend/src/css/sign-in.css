@@ -68,3 +68,8 @@ body {
 .checkbox input {
   cursor: pointer;
 }
+
+button:disabled {
+  background-color: #e2dfe7;
+  cursor: not-allowed;
+}
