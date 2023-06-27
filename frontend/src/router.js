@@ -4,7 +4,7 @@ export class Router {
             {
                 route: '#/',
                 title: 'Главная',
-                template: ''
+                template: 'templates/home.html'
             }
         ]
     }

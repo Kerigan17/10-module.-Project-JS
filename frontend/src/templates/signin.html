@@ -3,12 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Регистрация</title>
-
+    <title>Вход</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
-
-    <link href="../src/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../src/css/sign-in.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/sign-in.css" rel="stylesheet">
 </head>
 <body class="text-center">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -29,34 +27,32 @@
 
 <main class="form-signin w-100 m-auto">
     <form>
-        <img class="mb-5" src="../src/images/Logo.png" alt="Logo">
-        <h1 class="mb-3 fw-bold">Регистрация</h1>
+        <img class="mb-5" src="../images/Logo.png" alt="Logo">
+        <h1 class="mb-3 fw-bold">Вход</h1>
 
         <div class="form-floating mb-2">
-            <input type="text" class="form-control" id="floatingName" placeholder="Александр Малько">
-            <label for="floatingName">ФИО</label>
+            <input type="email" class="form-control" id="floatingInput email" placeholder="name@example.com">
+            <label for="floatingInput email">Электронная почта</label>
         </div>
-        <div class="form-floating mb-2">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Электронная почта</label>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword password" placeholder="Password">
+            <label for="floatingPassword password">Пароль</label>
         </div>
-        <div class="form-floating mb-2">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Пароль</label>
-        </div>
-        <div class="form-floating mb-4">
-            <input type="password" class="form-control" id="floatingPasswordTwo" placeholder="Password">
-            <label for="floatingPassword">Подтверждение пароля</label>
-        </div>
-        <button id="process" class="w-100 btn btn-lg btn-primary mb-1" type="button" disabled>Регистрация</button>
 
-        <div class="text-start mt-2">
-            Уже есть аккаунт? <a href="signin.html" class="ms-2">Войдите в систему</a>
+        <div class="checkbox mb-3 text-start">
+            <label>
+                <input id="agree" type="checkbox"> Запомнить меня
+            </label>
         </div>
+        <button id="process" class="w-100 btn btn-lg btn-primary" type="button" disabled>Вход</button>
+        <div class="registration text-start mt-2">
+            Еще нет аккаунта? <a href="registration.html" class="ms-2">Пройдите регистрацию</a>
+        </div>
+
     </form>
 </main>
 
-<script src="../src/components/registration.js"></script>
+<script src="../scripts/signin.js"></script>
 
 </body>
 </html>
