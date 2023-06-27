@@ -17,3 +17,8 @@
     vertical-align: -.125em;
     fill: currentColor;
 }
+
+#content {
+    padding: 100px 0 0 60px;
+    margin-left: 219px;
+}
